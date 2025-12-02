@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.M_Health">
         <activity
-            android:name=".MainActivity"
+            android:name=".AdminLoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AdminDashboardActivity" />
+        <activity android:name=".UserManagementActivity" />
+        <activity android:name=".PatientDatabaseActivity" />
+        <activity android:name=".SystemMonitorActivity" />
     </application>
 
 </manifest>

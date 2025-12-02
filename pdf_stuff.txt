@@ -17,7 +17,7 @@ A mobile health app that connects patients with their doctors and medical staff.
 - Send messages to their doctor
 - Get notifications about treatments and appointments
 
-## What can doctors do?
+# What can doctors do?
 - Login to secure account
 - Access patient medical files and history
 - View their appointment schedule
