@@ -6,24 +6,25 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AdminDashboardActivity extends AppCompatActivity {
-    private Button userManagementBtn, patientDatabaseBtn, systemMonitorBtn, logoutBtn;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_dashboard);
         
-        userManagementBtn = findViewById(R.id.userManagementBtn);
-        patientDatabaseBtn = findViewById(R.id.patientDatabaseBtn);
-        systemMonitorBtn = findViewById(R.id.systemMonitorBtn);
-        logoutBtn = findViewById(R.id.logoutBtn);
+        Button userButton = findViewById(R.id.userButton);
+        Button patientButton = findViewById(R.id.patientButton);
+        Button systemButton = findViewById(R.id.systemButton);
         
-        userManagementBtn.setOnClickListener(v -> startActivity(new Intent(this, UserManagementActivity.class)));
-        patientDatabaseBtn.setOnClickListener(v -> startActivity(new Intent(this, PatientDatabaseActivity.class)));
-        systemMonitorBtn.setOnClickListener(v -> startActivity(new Intent(this, SystemMonitorActivity.class)));
-        logoutBtn.setOnClickListener(v -> {
-            startActivity(new Intent(this, AdminLoginActivity.class));
-            finish();
+        userButton.setOnClickListener(v -> {
+            startActivity(new Intent(this, UserManagementActivity.class));
+        });
+        
+        patientButton.setOnClickListener(v -> {
+            startActivity(new Intent(this, PatientDatabaseActivity.class));
+        });
+        
+        systemButton.setOnClickListener(v -> {
+            startActivity(new Intent(this, SystemMonitorActivity.class));
         });
     }
 }

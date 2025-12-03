@@ -8,8 +8,8 @@ android {
 
     defaultConfig {
         applicationId = "m.health"
-        minSdk = 34
-        targetSdk = 36
+        minSdk = 21
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 

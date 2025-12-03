@@ -3,34 +3,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="20dp">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Patient Database"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="20dp" />
 
     <Button
-        android:id="@+id/addPatientBtn"
-        android:layout_width="match_parent"
+        android:id="@+id/viewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Patients"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Patient"
-        android:layout_marginBottom="16dp" />
-
-    <ListView
-        android:id="@+id/patientList"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="10dp" />
 
     <Button
-        android:id="@+id/backBtn"
-        android:layout_width="match_parent"
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Patient"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back" />
 

@@ -3,42 +3,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="20dp">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Admin Dashboard"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="32dp" />
+        android:layout_marginBottom="20dp" />
 
     <Button
-        android:id="@+id/userManagementBtn"
-        android:layout_width="match_parent"
+        android:id="@+id/userButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="User Management"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="10dp" />
 
     <Button
-        android:id="@+id/patientDatabaseBtn"
-        android:layout_width="match_parent"
+        android:id="@+id/patientButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Patient Database"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="10dp" />
 
     <Button
-        android:id="@+id/systemMonitorBtn"
-        android:layout_width="match_parent"
+        android:id="@+id/systemButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="System Monitor"
-        android:layout_marginBottom="32dp" />
-
-    <Button
-        android:id="@+id/logoutBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Logout" />
+        android:text="System Monitor" />
 
 </LinearLayout>
