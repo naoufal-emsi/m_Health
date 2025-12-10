@@ -62,7 +62,8 @@
         android:layout_above="@+id/inputContainer"
         android:layout_below="@+id/toolbar"
         android:padding="8dp"
-        android:clipToPadding="false" />
+        android:clipToPadding="false"
+        tools:listitem="@layout/item_medical_record"/>
 
     <!-- Input Container -->
     <LinearLayout
