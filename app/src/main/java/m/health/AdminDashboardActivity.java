@@ -2,8 +2,8 @@ package m.health;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class AdminDashboardActivity extends AppCompatActivity {
     @Override
@@ -11,19 +11,19 @@ public class AdminDashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_dashboard);
         
-        Button userButton = findViewById(R.id.userButton);
-        Button patientButton = findViewById(R.id.patientButton);
-        Button systemButton = findViewById(R.id.systemButton);
+        CardView userCard = findViewById(R.id.userCard);
+        CardView patientCard = findViewById(R.id.patientCard);
+        CardView systemCard = findViewById(R.id.systemCard);
         
-        userButton.setOnClickListener(v -> {
+        userCard.setOnClickListener(v -> {
             startActivity(new Intent(this, UserManagementActivity.class));
         });
         
-        patientButton.setOnClickListener(v -> {
+        patientCard.setOnClickListener(v -> {
             startActivity(new Intent(this, PatientDatabaseActivity.class));
         });
         
-        systemButton.setOnClickListener(v -> {
+        systemCard.setOnClickListener(v -> {
             startActivity(new Intent(this, SystemMonitorActivity.class));
         });
     }

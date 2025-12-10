@@ -1,8 +1,12 @@
 package m.health;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
+import java.util.Arrays;
+import java.util.List;
 
 public class PatientDatabaseActivity extends AppCompatActivity {
     @Override
@@ -10,10 +14,25 @@ public class PatientDatabaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_database);
         
-        Button viewButton = findViewById(R.id.viewButton);
+        ListView patientsList = findViewById(R.id.patientsList);
         Button addButton = findViewById(R.id.addButton);
-        Button updateButton = findViewById(R.id.updateButton);
         Button backButton = findViewById(R.id.backButton);
+        
+        List<String> patients = Arrays.asList(
+            "Amina Cherkaoui - ID: 001",
+            "Hassan Benjelloun - ID: 002",
+            "Salma Ouali - ID: 003",
+            "Karim El Fassi - ID: 004",
+            "Nadia Berrada - ID: 005",
+            "Mehdi Lahlou - ID: 006",
+            "Zineb Alaoui - ID: 007",
+            "Abderrahim Tounsi - ID: 008",
+            "Leila Benkirane - ID: 009",
+            "Saad Chraibi - ID: 010"
+        );
+        
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, patients);
+        patientsList.setAdapter(adapter);
         
         backButton.setOnClickListener(v -> finish());
     }
