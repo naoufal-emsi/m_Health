@@ -110,6 +110,9 @@
 
             <!-- Carte : Rendez-vous -->
             <LinearLayout
+
+
+
                 android:id="@+id/cardRdv"
                 android:clickable="true"
                 android:focusable="true"
