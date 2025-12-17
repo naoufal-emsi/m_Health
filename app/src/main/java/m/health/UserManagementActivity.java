@@ -28,7 +28,7 @@ public class UserManagementActivity extends AppCompatActivity {
             "Rachid Idrissi - Security"
         );
         
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, users);
+        UserAdapter adapter = new UserAdapter(this, users);
         usersList.setAdapter(adapter);
         
         backButton.setOnClickListener(v -> finish());
