@@ -11,7 +11,7 @@ public class AdminLoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_login);
+        setContentView(R.layout.activity_login);
         
         EditText usernameInput = findViewById(R.id.usernameInput);
         EditText passwordInput = findViewById(R.id.passwordInput);

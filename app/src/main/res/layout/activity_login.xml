@@ -25,7 +25,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Admin Login"
+                android:text="Login"
                 android:textSize="28sp"
                 android:textColor="@color/text_primary"
                 android:textStyle="bold"

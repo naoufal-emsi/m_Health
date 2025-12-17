@@ -41,4 +41,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    // Core Supabase functions
+    implementation(libs.postgrest.kt)
+// Database
+    implementation(libs.gotrue.kt)
+// Authentication
+    implementation(libs.storage.kt)
+// File Storage
+// Required for the networking to work in Java
+    implementation(libs.ktor.client.android)
 }
