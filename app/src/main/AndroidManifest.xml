@@ -13,9 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.M_Health">
         <activity
-            android:name="m.mhealth.ui.patient.HomeMedecin"
+            android:name=".activity_patient_login"
             android:exported="false" />
-        <!-- ÉCRAN PATIENT -->
+        <activity
+            android:name="m.mhealth.ui.patient.HomeMedecin"
+            android:exported="false" /> <!-- ÉCRAN PATIENT -->
         <activity
             android:name="m.mhealth.ui.patient.PatientActivity"
             android:exported="true" /> <!-- ÉCRAN BOOK APPOINTMENT -->
