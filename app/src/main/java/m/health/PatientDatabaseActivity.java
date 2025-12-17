@@ -31,7 +31,7 @@ public class PatientDatabaseActivity extends AppCompatActivity {
             "Saad Chraibi - ID: 010"
         );
         
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, patients);
+        PatientAdapter adapter = new PatientAdapter(this, patients);
         patientsList.setAdapter(adapter);
         
         backButton.setOnClickListener(v -> finish());

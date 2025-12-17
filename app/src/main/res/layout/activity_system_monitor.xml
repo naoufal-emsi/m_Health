@@ -52,12 +52,14 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/backButton"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:text="Back"
+        android:text="Retour"
         android:textColor="@color/primary_blue"
-        android:backgroundTint="@color/light_blue" />
+        android:backgroundTint="@color/light_blue"
+        app:cornerRadius="12dp"
+        style="@style/Widget.Material3.Button.OutlinedButton" />
 
 </LinearLayout>
