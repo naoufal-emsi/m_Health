@@ -8,7 +8,7 @@ public class patient extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.patient);   // uses patient.xml
+        setContentView(R.layout.activity_patient_dashboard);   // uses patient.xml
     }
 
 

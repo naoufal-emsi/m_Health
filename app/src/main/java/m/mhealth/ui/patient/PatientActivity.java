@@ -17,7 +17,7 @@ public class PatientActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         // ✅ On affiche l'écran patient
-        setContentView(R.layout.patient);
+        setContentView(R.layout.activity_patient_dashboard);
 
         // ✅ On récupère la carte Rendez-vous
         cardRdv = findViewById(R.id.cardRdv);
