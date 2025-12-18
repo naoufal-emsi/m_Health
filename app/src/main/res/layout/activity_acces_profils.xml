@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/profil_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accès aux Profils Patients (Administratif)"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"         android:layout_centerHorizontal="true"      android:layout_marginBottom="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">       <EditText
+        android:id="@+id/et_recherche_patient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez Nom, Prénom ou ID Patient"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btn_rechercher_patient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rechercher et Accéder au Profil"
+            android:backgroundTint="#87CEEB"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informations consultables :"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Informations Administratives"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Coordonnées"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Antécédents non médicaux"
+            android:layout_marginBottom="4dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
