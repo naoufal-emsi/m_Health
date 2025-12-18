@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
         app:cardBackgroundColor="@color/card_background">
 
         <LinearLayout
@@ -25,41 +25,41 @@
             <View
                 android:layout_width="60dp"
                 android:layout_height="4dp"
+                android:background="@color/primary_blue"
                 android:layout_gravity="center"
-                android:layout_marginBottom="16dp"
-                android:background="@color/primary_blue" />
+                android:layout_marginBottom="16dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:gravity="center"
-                android:text="Administration"
-                android:textColor="@color/text_primary"
+                android:text="Espace Médecin"
                 android:textSize="28sp"
-                android:textStyle="bold" />
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:gravity="center"
-                android:text="Système de gestion"
+                android:text="Accès professionnel"
+                android:textSize="14sp"
                 android:textColor="@color/text_secondary"
-                android:textSize="14sp" />
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 app:boxBackgroundColor="@color/light_blue"
-                app:boxCornerRadiusBottomEnd="8dp"
-                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopStart="8dp"
                 app:boxCornerRadiusTopEnd="8dp"
-                app:boxCornerRadiusTopStart="8dp">
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/usernameInput"
+                    android:id="@+id/doctorUsernameInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nom d'utilisateur"
@@ -72,14 +72,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 app:boxBackgroundColor="@color/light_blue"
-                app:boxCornerRadiusBottomEnd="8dp"
-                app:boxCornerRadiusBottomStart="8dp"
-                app:boxCornerRadiusTopEnd="8dp"
                 app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/passwordInput"
+                    android:id="@+id/doctorPasswordInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Mot de passe"
@@ -89,12 +89,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/loginButton"
+                android:id="@+id/doctorLoginButton"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:backgroundTint="@color/primary_blue"
                 android:text="Se connecter"
                 android:textColor="@color/white"
+                android:backgroundTint="@color/primary_blue"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:cornerRadius="12dp"
