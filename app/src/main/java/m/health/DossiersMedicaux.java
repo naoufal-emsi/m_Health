@@ -8,6 +8,6 @@ public class DossiersMedicaux extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dossiers_medicaux);
+        setContentView(R.layout.activity_doctor_records);
     }
 }
