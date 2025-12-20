@@ -11,6 +11,6 @@ public class HomeMedecin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         // affiche le layout du médecin
-        setContentView(R.layout.homemedecin);
+        setContentView(R.layout.activity_doctor_home);
     }
 }
