@@ -59,7 +59,7 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    anchor:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="Patient : Rachid Idrissi - Analyse sanguine"
                     android:textStyle="bold"
                     android:textColor="@color/text_primary"/>

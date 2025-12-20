@@ -11,11 +11,11 @@ public class DoctorLoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctor_login);
+        setContentView(R.layout.activity_login);
         
-        EditText usernameInput = findViewById(R.id.doctorUsernameInput);
-        EditText passwordInput = findViewById(R.id.doctorPasswordInput);
-        Button loginButton = findViewById(R.id.doctorLoginButton);
+        EditText usernameInput = findViewById(R.id.usernameInput);
+        EditText passwordInput = findViewById(R.id.passwordInput);
+        Button loginButton = findViewById(R.id.loginButton);
         
         loginButton.setOnClickListener(v -> {
             String username = usernameInput.getText().toString().trim();

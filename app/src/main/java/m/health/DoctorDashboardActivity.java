@@ -9,7 +9,7 @@ public class DoctorDashboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.HomeMedecin);
+        setContentView(R.layout.activity_home_medecin);
         
         CardView planningCard = findViewById(R.id.planningCard);
         CardView recordsCard = findViewById(R.id.recordsCard);
